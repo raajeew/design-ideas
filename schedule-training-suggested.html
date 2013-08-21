@@ -77,29 +77,9 @@
     </div>    	
 	
     <div class="main-body">
-		<h2>Schedule Training</h2>
+		<h2>Suggested Training Centers</h2>
 		<div class="selectDtata">
-			<strong>Select District : </strong>
-			<span>
-				<select>
-					<option selected="selected">Bidar</option>
-					<option>Bidar</option>
-				</select>
-			</span>
-			<a class="add_Dist btnAdd">+</a>
-			<strong>Select Department : </strong>
-			<span>
-				<select>
-					<option selected="selected">All</option>
-					<option>SDC</option>
-                    <option>FDC</option>
-				</select>
-			</span>
-			<a class="add_Dist btnAdd">+</a>
-			&nbsp;
-			<span>
-				<input type="button" value="Get data" />
-			</span>
+			
 		</div>
 		<br />
 		<div class="details">
@@ -228,7 +208,106 @@
 		</div>
 		<br />
     </div>    
-	
+	<!-- dialog -->
+	<div class="overlay"><!--overlay--></div>
+	<div class="dialog-box">
+		<p><strong>Subject</strong> : subject2</p>
+		<table class="details" cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td valign="top">
+					<table class="gridView"  cellspacing="0" cellpadding="0" border="0" width="100%">
+						<tr>
+							<th>No.</th>
+							<th>Topic</th>
+							<th>Select to map faculty</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Topic 1</td>
+							<td><input type="checkbox" /></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Topic 2</td>
+							<td><input type="checkbox" /></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Topic 3</td>
+							<td><input type="checkbox" /></td>
+						</tr>
+					</table>
+				</td>
+				<td></td>
+				<td valign="top">
+					<table class="gridView"  cellspacing="0" cellpadding="0" border="0" width="100%">
+						<tr>
+							<th>Topic</th>
+							<th>Faculty</th>
+						</tr>
+						<tr>
+							<td>Topic 1</td>
+							<td>D. Pralhad</td>
+						</tr>
+						<tr>
+							<td>Topic 2</td>
+							<td>D. Pralhad</td>
+						</tr>
+						<tr>
+							<td>Topic 3</td>
+							<td>D. Pralhad</td>
+						</tr>
+
+					</table>
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="3">Available Faculty</td>
+			</tr>
+			
+			<tr>
+				<td valign="top">
+					<select name="faculties" multiple style="height:160px; width:100%">
+					  <option value="volvo">Dwarakanath Prasad</option>
+					  <option value="saab">Kalavati Varekar</option>
+					  <option value="opel">Krishnprasad K</option>
+					  <option value="audi">Praveen Shetty</option>
+					  <option value="audi">Rohini Hande</option>
+					</select>
+				</td>
+				<td width="50px" style="text-align:center;">
+					<p>
+						<input type="button" value=">" />
+					</p>
+					<p>
+						<input type="button" value=">>" />
+					</p>
+					<p>
+						<input type="button" value="<" />
+					</p>
+					<p>
+						<input type="button" value="<<" />
+					</p>
+				</td>
+				<td valign="top">
+					<select name="faculties" multiple style="height:160px; width:100%">
+					  <option value="volvo">Dwarakanath Prasad</option>
+					  <option value="saab">Praveen Shetty</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="center">
+					<input type="button" value="Save" />
+					<input type="button" value="Close" />
+					<input type="button" value="Cancel" />
+				</td>
+			</tr>
+			
+		</table>
+	</div>
+	<!-- dialog ends -->
     <footer>
       <span style="display:inline-block; padding:12px 0 0 12px">Footer</span>
     </footer>
