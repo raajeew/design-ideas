@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset=utf-8 />
+	<title>Welcome to TMS</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="jquery-1.9.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.viewDetail").click(function(){
+				$(".show.details").fadeIn("slow");
+			});
+		});
+	</script>
+</head>
+<body>
+  <div class="pageWrap">
+    <header>
+      <div class="top">
+        <div class="hd-left">
+          <a href="." class="logo">Training Management System</a>
+        </div>
+        
+        <div class="hd-right">
+          <form method="get" action="index.html">           
+            <label class="logged-inas">
+              Logged in as <strong>Application Administrator</strong>
+            </label>
+            <label>
+              <input type="image" src="img/btn_logout.png" />
+            </label>
+          </form>
+        </div>
+      </div>
+      
+      <nav>
+        <ul class="main-nav">
+          <li>
+            <a href="employee.html">Employees</a>
+          </li>
+          <li class="active">
+            <a href="training.html">Training</a>
+          </li>
+          <li>
+            <a href="#">E-Learning</a>
+          </li>
+          <li class="last">
+            &nbsp;
+          </li>
+        </ul>  
+        
+        <ul class="sub-nav">
+			<li>
+				<a href="#">Employee Training Status</a>
+			</li>
+			<li>
+				<a href="#">Training Indents</a>
+			</li>
+			<li class="active">
+				<a href="#">Schedule Training</a>
+			</li>
+            <li>
+				<a href="#">Training Analytics</a>
+			</li>
+        </ul>  
+      </nav>
+    </header>
+    
+    <div class="breadcrumbs">
+      <label>
+        <a href="#">Training</a>
+        <span>&raquo;</span>
+        <a href="#">Training Schedule</a>
+		<span>&raquo;</span>
+        <a href="#">Schedule</a>
+      </label>
+    </div>    	
+	
+    <div class="main-body">
+		<h2>Schedule Training</h2>
+		<div class="selectDtata">
+			<strong>Select District : </strong>
+			<span>
+				<select>
+					<option selected="selected">Bidar</option>
+					<option>Bidar</option>
+				</select>
+			</span>
+			<a class="add_Dist btnAdd">+</a>
+			<strong>Select Department : </strong>
+			<span>
+				<select>
+					<option selected="selected">All</option>
+					<option>SDC</option>
+                    <option>FDC</option>
+				</select>
+			</span>
+			<a class="add_Dist btnAdd">+</a>
+			&nbsp;
+			<span>
+				<input type="button" value="Get data" />
+			</span>
+		</div>
+		<br />
+		<div class="details">
+			<table width="100%">
+				<tr>
+					<th width="150">Center</th>
+					<th>Location</th>
+					<th>Capacity</th>
+					<th>Date From</th>
+					<th>Date To</th>
+					<th width="110">Remarks</th>
+                    <th width="100">Select</th>
+				</tr>
+				<tr>
+					<td>DTC Bidar</td>
+                    <td><a href="#">Bidar</a></td>
+					<td><a href="#">20</a></td>
+					<td><a href="#">2/9/2013</a></td>
+					<td><a href="#">3/9/2013</a></td>
+					<td><a href="#">Recomended</a></td>
+                    <td><a href="#">Select</a></td>
+				</tr>
+				<tr>
+					<td>DTC Bidar</td>
+                    <td><a href="#">Bidar</a></td>
+					<td><a href="#">20</a></td>
+					<td><a href="#">15/9/2013</a></td>
+					<td><a href="#">16/9/2013</a></td>
+					<td><a href="#"></a></td>
+                    <td><a href="#">Select</a></td>
+				</tr>
+				<tr>
+					<td>DTC Gulbarga</td>
+                    <td><a href="#">Gulbarga</a></td>
+					<td><a href="#">15</a></td>
+					<td><a href="#">21/9/2013</a></td>
+					<td><a href="#">22/9/2013</a></td>
+					<td><a href="#"></a></td>
+                    <td><a href="#"></a></td>
+				</tr>
+				<tr>
+					<td>DTC2 Gulbarga</td>
+                    <td><a href="#">Gulbarga</a></td>
+					<td><a href="#">50</a></td>
+					<td><a href="#">22/9/2013</a></td>
+					<td><a href="#">33/9/2013</a></td>
+					<td><a href="#"></a></td>
+                    <td><a href="#">Select</a></td>
+				</tr>
+				
+				<tr>
+					<td colspan="6" style="text-align:right">Total</td>
+					<td>15</td>
+				</tr>
+			</table>
+		</div>
+		<br />
+        <div class="show details">
+			<h3>Subject : Subject 2</h3>
+			<table width="100%">
+				<tr>
+					<th width="150">Employee</th>
+					<th>Department</th>
+					<th>Cadre</th>
+					<th>Current Location</th>
+                    <th>Contact Number</th>
+                    <th>E-Mail</th>
+				</tr>
+				<tr>
+					<td>Amod S G</td>
+					<td>Agriculture</td>
+					<td>FDC</td>
+					<td>Bhalki</td>
+                    <td></td>
+                    <td></td>
+				</tr>
+				<tr>
+					<td>Manjunath Prasanna</td>
+					<td>Agriculture</td>
+					<td>FDC</td>
+					<td>Bhalki</td>
+                    <td></td>
+                    <td></td>
+				</tr>
+              <tr>
+					<td>Manish Puranik</td>
+					<td>Agriculture</td>
+					<td>FDC</td>
+					<td>Bhalki</td>
+                    <td></td>
+                    <td></td>
+				</tr>
+              <tr>
+					<td>Jaishree PK</td>
+					<td>Agriculture</td>
+					<td>SDC</td>
+					<td>Basavklyan</td>
+                    <td></td>
+                    <td></td>
+				</tr>
+              <tr>
+					<td>Dilip Kumar Reddy</td>
+					<td>Home</td>
+					<td>FDC</td>
+					<td>Bhalki</td>
+                    <td></td>
+                    <td></td>
+				</tr>
+              <tr>
+					<td>Amod S G</td>
+					<td>Agriculture</td>
+					<td>FDC</td>
+					<td>Bidar</td>
+                    <td></td>
+                    <td></td>
+				</tr>
+              <tr>
+					<td>Anand A</td>
+					<td>Home</td>
+					<td>SDC</td>
+					<td>Bidar</td>
+                    <td></td>
+                    <td></td>
+				</tr>
+			</table>
+		</div>
+		<br />
+    </div>    
+	
+    <footer>
+      <span style="display:inline-block; padding:12px 0 0 12px">Footer</span>
+    </footer>
+  </div>
+</body>
+</html>
+  
