@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Welcome to TMS</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="jquery-1.9.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.viewDetail").click(function(){
+				$(".show.details").fadeIn("slow");
+			});
+		});
+	</script>
+</head>
+<body>
+  <div class="pageWrap">
+    <header>
+      <div class="top">
+        <div class="hd-left">
+          <a href="." class="logo">Training Management System</a>
+        </div>
+        
+        <div class="hd-right">
+          <form method="get" action="index.html">           
+            <label class="logged-inas">
+              Logged in as <strong>Application Administrator</strong>
+            </label>
+            <label>
+              <input type="image" src="img/btn_logout.png" />
+            </label>
+          </form>
+        </div>
+      </div>
+      
+      <nav>
+        <ul class="main-nav">
+          <li>
+            <a href="employee.html">Employees</a>
+          </li>
+          <li class="active">
+            <a href="training.html">Training</a>
+          </li>
+          <li>
+            <a href="#">E-Learning</a>
+          </li>
+          <li class="last">
+            &nbsp;
+          </li>
+        </ul>  
+        
+        <ul class="sub-nav">
+			<li class="active">
+				<a href="#">Employee Training Status</a>
+			</li>
+			<li>
+				<a href="#">Training Indents</a>
+			</li>
+			<li>
+				<a href="#">Schedule Training</a>
+			</li>
+            <li>
+				<a href="#">Training Analytics</a>
+			</li>
+        </ul>  
+      </nav>
+    </header>
+    
+    <div class="breadcrumbs">
+      <label>
+        <a href="#">Training</a>
+        <span>&raquo;</span>
+        <a href="#">Training Status</a>
+      </label>
+    </div>    	
+	
+    <div class="main-body">
+		<h2>Employee Training Status</h2>
+		<div class="selectDtata">
+			<strong>District : </strong>
+			<span>
+				<select>
+					<option selected="selected">Bidar</option>
+					<option>Bidar</option>
+				</select>
+			</span>
+			<strong>Department : </strong>
+			<span>
+				<select>
+					<option selected="selected">All</option>
+					<option>SDC</option>
+                    <option>FDC</option>
+				</select>
+			</span>
+
+			<span>
+				<input type="button" value="Get data" />
+			</span>
+		</div>
+		<br />
+		<div class="details">
+			<table width="100%" class="status">
+				<tr>
+					<th width="150">Department</th>
+					<th>SDC</th>
+					<th>FDC</th>
+					<th>ADCA</th>
+					<th>DDCA</th>
+					<th width="170">Dep. Total</th>
+				</tr>
+				<tr>
+					<td>Agriculture</td>
+					<td><a class="fgreen" href="#">2</a></td>
+					<td><a class="fgreen" href="#">0</a></td>
+					<td><a class="fred" href="#">0</a></td>
+					<td><a class="fred" href="#">0</a></td>
+					<td><a href="#">2</a></td>
+				</tr>
+				<tr>
+					<td>Fisheries</td>
+					<td><a class="fblue" href="#">0</a></td>
+					<td><a class="fgreen" href="#">0</a></td>
+					<td><a class="fred" href="#">0</a></td>
+					<td><a class="fred" href="#">0</a></td>
+					<td><a href="#">0</a></td>
+				</tr>
+				<tr>
+					<td>PWD</td>
+					<td><a class="fred" href="#">5</a></td>
+					<td><a class="fblue" href="#">2</a></td>
+					<td><a class="fred" href="#">0</a></td>
+					<td><a class="fred" href="#">0</a></td>
+					<td><a href="#">7</a></td>
+				</tr>
+				<tr>
+					<td>Home</td>
+					<td><a class="fblue" href="#">3</a></td>
+					<td><a class="fgreen" href="#">3</a></td>
+					<td><a class="fred" href="#">2</a></td>
+					<td><a class="fred" href="#">2</a></td>
+					<td><a href="#">10</a></td>
+				</tr>
+				<tr>
+					<td>Education</td>
+					<td><a class="fred" href="#">3</a></td>
+					<td><a class="fgreen" href="#">0</a></td>
+					<td><a class="fred" href="#">2</a></td>
+					<td><a class="fred" href="#">2</a></td>
+					<td><a href="#">7</a></td>
+				</tr>
+				<tr>
+					<td colspan="5" style="text-align:right">Total</td>
+					<td>26</td>
+				</tr>
+			</table>
+		</div>
+		<br />
+      <div class="legends">
+        <p>
+          <label class="green">&nbsp;</label>
+          <span>All employee have completed the required training programs for the cadre</span>
+        </p>
+        <p>
+          <label class="blue">&nbsp;</label>
+          <span>More than 50% employee have completed the required training programs for the cadre</span>
+        </p>
+        <p>
+          <label class="red">&nbsp;</label>
+          <span>Less than 50% employee have completed the required training programs for the cadre</span>
+        </p>
+      </div> 
+		<br />
+    </div>
+    
+    <footer>
+      <span style="display:inline-block; padding:12px 0 0 12px">Footer</span>
+    </footer>
+  </div>
+</body>
+</html>
+  
