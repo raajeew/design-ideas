@@ -46,12 +46,15 @@ strong{font-weight:bold;}
 .main-body .details table td{font-weight:normal !important;}
 a.complete,a.not-started{text-decoration:none; color:#333;}
 a.complete{color:#239400;}
-.main-body table tr:nth-child(odd) td{background:#d6e6f0;}
-.main-body table tr:nth-child(even) td{background:#eff5f8;}
-.main-body table th{padding:10px 0; background:#7cb5d6; color:#00283f; text-align:center;border:1px solid #6ba8cb; border-collapse:collapse;}
-.main-body table td{border:1px solid #6ba8cb; border-collapse:collapse;padding:10px; text-align:center; font-weight:bold;}
+
+table.gridView {border-collapse:collapse;}
+.main-body table tr:nth-child(odd) td,table.gridView tr:nth-child(odd) td{background:#d6e6f0;}
+.main-body table tr:nth-child(even) td,table.gridView tr:nth-child(even) td{background:#eff5f8;}
+.main-body table th,table.gridView th{padding:10px 0; background:#7cb5d6; color:#00283f; text-align:center;border:1px solid #6ba8cb; border-collapse:collapse;}
+.main-body table td,table.gridView td{border:1px solid #6ba8cb; border-collapse:collapse;padding:10px; text-align:center; font-weight:bold;}
 .main-body table td:first-child{text-align:left; font-weight:bold;}
 .main-body table th:first-child{text-align:left; font-weight:bold; padding-left:10px;}
+
 a{text-decoration:underline; color:#0076ba;}
 
 .legends label{float:left;width:1px; height:1px; padding:5px; display:block; margin-top:2px;}
@@ -64,3 +67,6 @@ a.fred{color:#dc0101;}
 .legends span{display:inline-block; padding-left:5px;}
 
 footer{height:40px; border-top:1px solid #ccc; background:#f0ede7;}
+
+.overlay{background:#000; opacity:0.4; position:absolute; height:100%; width:100%;z-index:98; left:0; top:0;}
+.dialog-box{background:#F4FFC7; border:2px solid #D7E3A6; border-radius:6px; padding:10px 15px; width:600px; position:absolute; left:0; top:0;z-index:99; left:50%; top:150px; margin-left:-300px;}
