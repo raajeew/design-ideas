@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Welcome to TMS</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="jquery-1.9.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("a.viewDetail").click(function(){
+				$(".show.details").fadeIn("slow");
+			});
+		});
+	</script>
+</head>
+<body>
+  <div class="pageWrap">
+    <header>
+      <div class="top">
+        <div class="hd-left">
+          <a href="." class="logo">Training Management System</a>
+        </div>
+        
+        <div class="hd-right">
+          <form method="get" action="index.html">           
+            <label class="logged-inas">
+              Logged in as <strong>Application Administrator</strong>
+            </label>
+            <label>
+              <input type="image" src="img/btn_logout.png" />
+            </label>
+          </form>
+        </div>
+      </div>
+      
+      <nav>
+        <ul class="main-nav">
+          <li>
+            <a href="employee.html">Employees</a>
+          </li>
+          <li class="active">
+            <a href="training.html">Training</a>
+          </li>
+          <li>
+            <a href="#">E-Learning</a>
+          </li>
+          <li class="last">
+            &nbsp;
+          </li>
+        </ul>  
+        
+        <ul class="sub-nav">
+			<li>
+				<a href="#">Employee Training Status</a>
+			</li>
+			<li class="active">
+				<a href="#">Training Indents</a>
+			</li>
+			<li>
+				<a href="#">Schedule Training</a>
+			</li>
+            <li>
+				<a href="#">Training Analytics</a>
+			</li>
+        </ul>  
+      </nav>
+    </header>
+    
+    <div class="breadcrumbs">
+      <label>
+        <a href="#">Training</a>
+        <span>&raquo;</span>
+        <a href="#">Training Indents</a>
+      </label>
+    </div>    	
+	
+    <div class="main-body">
+		<h2>Employee Training Indents</h2>
+		<div class="selectDtata">
+			<strong>Select District : </strong>
+			<span>
+				<select>
+					<option selected="selected">Bidar</option>
+					<option>Bidar</option>
+				</select>
+			</span>
+			<strong>Select Department : </strong>
+			<span>
+				<select>
+					<option selected="selected">All</option>
+					<option>SDC</option>
+                    <option>FDC</option>
+				</select>
+			</span>
+
+			<span>
+				<input type="button" value="Get data" />
+			</span>
+		</div>
+		<br />
+		<div class="details">
+			<table width="100%">
+				<tr>
+					<th width="150">Subject</th>
+					<th>SDC</th>
+					<th>FDC</th>
+					<th>ADCA</th>
+					<th>DDCA</th>
+					<th width="170">District Total</th>
+				</tr>
+				<tr>
+					<td>Subject 1</td>
+                    <td><a href="#">5</a></td>
+					<td><a href="#">2</a></td>
+					<td><a href="#">1</a></td>
+					<td><a href="#">1</a></td>
+					<td><a href="#">9</a></td>
+				</tr>
+				<tr>
+					<td>Subject 2</td>
+					<td><a href="#">3</a></td>
+					<td><a href="#">1</a></td>
+					<td><a href="#">1</a></td>
+					<td><a href="#">1</a></td>
+					<td><a href="javascript:void()" class="viewDetail">6</a></td>
+				</tr>
+				
+				<tr>
+					<td colspan="5" style="text-align:right">Total</td>
+					<td>15</td>
+				</tr>
+			</table>
+		</div>
+		<br />
+        <div class="show details" style="display:none;">
+			<h3>Subject : Subject 2</h3>
+			<table width="100%">
+				<tr>
+					<th width="150">Employee</th>
+					<th>Department</th>
+					<th>Cadre</th>
+					<th>Current Location</th>
+				</tr>
+				<tr>
+					<td>Amod S G</td>
+					<td>Agriculture</td>
+					<td>FDC</td>
+					<td>Bhalki</td>
+				</tr>
+				<tr>
+					<td>Manjunath Prasanna</td>
+					<td>Agriculture</td>
+					<td>FDC</td>
+					<td>Bhalki</td>
+				</tr>
+              <tr>
+					<td>Manish Puranik</td>
+					<td>Agriculture</td>
+					<td>FDC</td>
+					<td>Bhalki</td>
+				</tr>
+              <tr>
+					<td>Jaishree PK</td>
+					<td>Agriculture</td>
+					<td>SDC</td>
+					<td>Basavklyan</td>
+				</tr>
+              <tr>
+					<td>Dilip Kumar Reddy</td>
+					<td>Home</td>
+					<td>FDC</td>
+					<td>Bhalki</td>
+				</tr>
+              <tr>
+					<td>Amod S G</td>
+					<td>Agriculture</td>
+					<td>FDC</td>
+					<td>Bidar</td>
+				</tr>
+              <tr>
+					<td>Anand A</td>
+					<td>Home</td>
+					<td>SDC</td>
+					<td>Bidar</td>
+				</tr>
+			</table>
+		</div>
+		<br />
+    </div>
+    
+    <footer>
+      <span style="display:inline-block; padding:12px 0 0 12px">Footer</span>
+    </footer>
+  </div>
+</body>
+</html>
+  
